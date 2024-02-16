@@ -1,0 +1,55 @@
+/* this is a css comment */
+/* remove bullets from unordered list in navigation */
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+/* remove underline from links */
+nav a {
+    text-decoration: none;
+}
+
+/* add background and boarders to links */
+nav a {
+    display:inline-block;
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid #ccc;
+}
+
+/* change background color on hover or focus state */
+nav a:hover,
+nav a:focus {
+    background-color: #ccc;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; font-size: 18px;
+}
+
+header, footer {
+    background-color: lightgray;
+}
+
+.site-title {
+    color: blue;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+section ul {
+    list-style-type: square;
+}
+
+section ul li:nth-child(odd) {
+    background-color:cornsilk;
+}
+
+
+
+
+
+
