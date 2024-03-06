@@ -1,0 +1,196 @@
+/* Reset for basic elements to remove default margins and paddings */
+body, h1, h2, p, ul {   
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling for font default settings */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Main background styling for layout alignment and color */
+.main-background {
+    background-color: #a9d4cf;
+    width: 1027px;
+    height: auto; 
+    margin: 0 auto;
+    padding: 0 208px;
+}
+
+/* Header styling, including background color and text alignment */
+header {
+    text-align: center;
+    background-color: #D4E9E7; 
+    padding: 20px 0; 
+    position: relative;
+}
+
+/* Header content for positioning the overlay text */
+.header-content {
+    position: relative;
+}
+
+/* Overlay text styling for positioning and aesthetics */
+.overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 2.5em;
+}
+
+/* Navigation bar list item styling */
+nav ul li { 
+    display: inline-block;
+    border-right: 1px solid #333;
+    width : 320px;
+    text-align: center;
+}
+
+/* Removing the border for the last item in the navigation bar */
+nav ul li:last-child { 
+    border-right: none;
+}
+
+/* Content section styling for layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    background-color: #D4E9E7; 
+}
+
+/* Article styling for layout within content section */
+.article {
+    width: 90%;
+    margin-top: 20px;
+    background-color: #D4E9E7; 
+}
+
+/* Article image styling for alignment and spacing */
+article img {
+    width: 190px;
+    float: left;
+    margin: 0 20px 20px 0; 
+}
+
+/* Facts section styling, including background and margins */
+.facts {
+    background-color: #D4E9E7; 
+    border: none; 
+    margin-top: 10px;
+}
+
+/* Facts heading and list item styling for spacing */
+.facts h2 {
+    margin-bottom: 10px;
+}
+.facts ul > li{
+    margin-left: 15px;
+}
+
+/* Contact section styling */
+.contact {
+    background-color: #D4E9E7; 
+    margin-top: 20px; 
+    border: 2px solid black; 
+}
+
+/* Styling for section headings */
+section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling in contact section for margin */
+.contact > p { 
+    margin-bottom: 20px;
+}
+
+/* Form container styling within contact section */
+.contact .form-container {
+    padding: 20px;
+}
+
+/* Form container default styling */
+.form-container{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+/* Form row, text input, email input, and textarea styling for layout */
+.contact .form-row, .contact input[type="text"], .contact input[type="email"], .contact textarea {
+    display: block; 
+    width: calc(100% - 40px); 
+    padding: 10px; 
+    background-color:transparent; 
+}
+.form-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Input and textarea styling for width and padding */
+input, textarea{
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Options section styling for layout */
+.options {
+    display:inline-flex;
+    gap: 2px;
+    margin-top: 12px;
+}
+
+/* Label styling within options for alignment */
+.options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* input radio styling for proper layout */
+input[type="radio"] {
+    margin-top: 0%;
+}
+
+/* Paragraph styling within sections for margin */
+section p {
+    margin-top: 10px;
+}
+
+/* Button styling for aesthetics and interaction */
+button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Button hover effect for visual feedback */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling, including alignment and background */
+footer > p{
+    margin-right: 10px;
+}
+footer {
+    text-align: right; 
+    padding: 20px 0; 
+    background-color: #D4E9E7; 
+    color: black;
+    width: 100%;   
+}
