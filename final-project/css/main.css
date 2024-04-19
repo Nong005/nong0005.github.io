@@ -504,7 +504,7 @@ h1 {
     margin-left: 0;
   }
   .banner img {
-    visibility: hidden;
+    visibility:visible;
   }
   .banner {
     background-image: url(/images/main-banner.jpg);
