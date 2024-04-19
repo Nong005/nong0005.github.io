@@ -1,0 +1,773 @@
+
+
+/* Mobile approach  */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-weight: 700;
+}
+.container {
+  max-width: 1200px;
+}
+/* header style  */
+  header {
+    background-color: #222;
+  }
+  header > .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    text-align: left; /* Ensures contents start from the left */
+  }
+  nav ul li {
+    list-style: none;
+  }
+/* header lists item styling  */
+  header > .container > nav ul li a {
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none; /* Removes underline from links */
+    display: block; 
+    list-style: none;
+    margin: 2px;
+    color: #c78c06;
+  }
+  /* hover effect  */
+  .logo-area:hover {
+    background-color: #c78c06;
+  }
+  .home-link:hover,
+  .about-link:hover,
+  .service-link:hover,
+  .team-link:hover,
+  .contact-link:hover {
+    background-color: #c78c06;
+  }
+  .home-link:hover a,
+  .about-link:hover a,
+  .service-link:hover a,
+  .team-link:hover a,
+  .contact-link:hover a {
+    color: #222;
+  }
+  nav ul li form {
+    width: 100%; /* Full width to stretch across the container */
+    display: flex; /* Ensures the form is a block level element */
+    margin-top: 10px; /* Space above the form */
+  }
+  /* Full width input field within the form */
+  nav form input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding for visual balance */
+    padding: 8px 10px; /* Padding inside the input for better touch */
+    border: 1px solid #ccc; /* Styling the border of the input */
+    margin: 0 auto; /* Centering the input field if needed */
+    display: flex;
+  }
+  /* Adjusts the search icon (if using FontAwesome or similar) */
+  nav form i.fa-search {
+    position: relative; /* Optionally position the search icon inside the input */
+    right: 10px;
+    padding: 8px;
+    background: #222; /* Optional: background color for the icon */
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #c78c06;
+    color: #c78c06;
+  }
+  /* Banner container with relative positioning */
+  .banner {
+    position: relative; /* Establishes a positioning context for overlay */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the banner */
+    overflow: hidden; /* Prevents overflow of child elements */
+  }
+  /* Full-width background image */
+  .banner-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+  }
+  /* Overlay with semi-transparent background */
+  .overlay {
+    position: absolute; /* Positions relative to the nearest positioned ancestor */
+    top: 40px; /* Space from the top of the container */
+    left: 0;
+    right: 0;
+    bottom: 40px; /* Space from the bottom of the container */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px; /* Padding around content */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+  }
+  /* Styling for headings and paragraphs inside the overlay */
+  .overlay h1,
+  .overlay p {
+    color: white; /* Ensures text is readable against dark background */
+    margin: 10px auto; /* Space between elements */
+  }
+  /* Button styling */
+  .connect-button {
+    padding: 10px 20px;
+    background-color: #c78c06; /* Yellowish-orange background */
+    color: #222;
+    text-decoration: none;
+    display: inline-flex; /* Inline-flex to align icon with text */
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+  }
+  .connect-button i {
+    margin-left: 10px; /* Space between text and arrow icon */
+  }
+  /* Specific targeting for the About Us container styling */
+  #about-us > .container {
+    background-color: #ffe6ac; /* Sets the background color to a light cream shade */
+    padding: 20px; /* Adjusts padding inside the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: calc(100% - 40px); /* Adjusts width accounting for padding */
+    max-width: 1200px; /* Matches the width of header and other sections for consistency */
+    margin: 0 auto; /* Centers the container within the section */
+  }
+  #about-us .wrapper {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: start; /* Aligns content centrally */
+    padding: 0; /* Removes padding from the wrapper if any */
+  }
+  #about-us img {
+    max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  #about-us h2 {
+    color: #222; /* Dark text color for contrast */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  #about-us p {
+    color: #222; /* Slightly lighter text color for readability */
+    line-height: 1.6; /* Improves the readability of paragraphs */
+    margin-bottom: 10px; /* Space between paragraphs */
+  }
+  #services {
+    width: 100%;
+    overflow: hidden; /* Prevents overflow of child elements */
+    background-color: white;
+  }
+  #services > .container {
+    background-color: #ffe6ac; /* Sets the background color to a light cream shade */
+    padding: 20px; /* Adjusts padding inside the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Adjusts width accounting for padding */
+    max-width: 1200px; /* Matches the width of header and other sections for consistency */
+    margin: 0 auto;
+  }
+  #services h2 {
+    background-color: #fff;
+  }
+  .right,
+  .left {
+    background-color: #ffe6ac;
+  }
+  .right,
+  .left > img {
+    width: 100%;
+  }
+  .right,
+  .left > div {
+    margin-bottom: 40px;
+  }
+  .right,
+  .left > div h3,
+  p {
+    margin-left: 20px;
+  }
+  .right,
+  .left > div > button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .digital-button {
+    padding: 10px 20px;
+    background-color: #222; /* Yellowish-orange background */
+    color: #ccc;
+    text-decoration: none;
+    display: inline-flex; /* Inline-flex to align icon with text */
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  }
+  .container > .fas.fa-caret-right {
+    margin-left: 0; /* Space between text and arrow icon */
+  }
+  .right > img {
+    width: 100%; /* Ensures the image is responsive and does not overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  .marketing-wrapper > .container {
+    background-color: #ffe6ac;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .marketing-button {
+    padding: 10px 20px;
+    background-color: #222; /* Yellowish-orange background */
+    color: #ccc;
+    text-decoration: none;
+    display: inline-flex; /* Inline-flex to align icon with text */
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  }
+  .container > .fas.fa-caret-right {
+    margin-left: 0; /* Space between text and arrow icon */
+  }
+  .marketing-wrapper img {
+    max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  /* video section styling  */
+  .video {
+    background-color: #ffe6ac;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .video-button {
+    padding: 10px 20px;
+    background-color: #222; 
+    color: #ccc;
+    text-decoration: none;
+    display: inline-flex; 
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  }
+  .container > .fas.fa-caret-right {
+    margin-left: 0; /* Space between text and arrow icon */
+  }
+  .video {
+    background-color: #ffe6ac;
+  }
+  .video > img {
+    width: 100%;
+  }
+  .web > img {
+    width: 100%;
+  }
+  .print > img {
+    width: 100%;
+  }
+  .video > div {
+    width: 100%;
+  }
+  .web {
+    background-color: #ffe6ac;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .web-button {
+    padding: 10px 20px;
+    background-color: #222; 
+    color: #ccc;
+    text-decoration: none;
+    display: inline-flex; 
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  }
+  .container > .fas.fa-caret-right {
+    margin-left: 0; /* Space between text and arrow icon */
+  }
+  .print {
+    background-color: #ffe6ac;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .print-button {
+    padding: 10px 20px;
+    background-color: #222; 
+    color: #ccc;
+    text-decoration: none;
+    display: inline-flex; 
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  }
+  .container > .fas.fa-caret-right {
+    margin-left: 0; /* Space between text and arrow icon */
+  }
+  .vision-container > img {
+    width: 100%;
+    margin-top: 30px;
+    height: 300px;
+  }
+  .vision-container a {
+    text-decoration: none;
+  }
+  .vision-container > div {
+    margin-top: -250px;
+    margin-left: 40px;
+    width: 90%;
+    color: #fff;
+  }
+  .vision-button {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+  .vision-button > p {
+    margin-bottom: 20px;
+  }
+  #team > .container {
+    background-color: #ffe6ac; /* Sets the background color to a light cream shade */
+    padding: 20px; /* Adjusts padding inside the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Adjusts width accounting for padding */
+    max-width: 1200px; /* Matches the width of header and other sections for consistency */
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  #team h2 {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  #team img {
+    max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  #contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  #contact h2,
+  #contact h3 {
+    text-align: start;
+    margin-bottom: 20px; /* Space below headings */
+  }
+  #contact form {
+    display: block;
+    width: 100%;
+  }
+  #contact form label {
+    display: block; /* Ensures each label is on a new line */
+    margin: 10px 0 5px; /* Space above each label */
+  }
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea {
+    width: 100%; /* Full width to fill container */
+    padding: 8px;
+    margin-bottom: 20px; /* Space below each input */
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  #contact form input[type="submit"] {
+    display: block; /* Block display to fit width */
+    padding: 10px;
+    background-color: #000; /* Black background for the button */
+    color: #c78c06; /* Yellowish-orange text color */
+    border: none;
+    cursor: pointer;
+  }
+  .table-wrapper > caption {
+    font-weight: 800;
+  }
+  #contact .table-wrapper {
+    width: 100%;
+    margin-top: 40px; /* Space between form and table */
+    border-collapse: collapse; /* Ensures borders between cells are shared */
+    border: 1px solid #222; /* Border around the entire table */
+  }
+  #contact table {
+    width: 100%; /* Table width matches the container */
+    border-collapse: collapse; /* Necessary for border handling */
+  }
+  #contact table caption {
+    margin-bottom: 10px; /* Space below caption */
+    text-align: left;
+  }
+  #contact table th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #222;
+    font-weight: 400;
+  }
+  #contact table td {
+    padding: 8px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left within cells */
+    border: 1px solid #222; /* Adds borders between cells */
+  }
+  #contact table th {
+    background-color: #ffe6ac; /* Yellow background for headers */
+  }
+  .location-wrapper .container {
+    width: 100%; /* Full width of the parent element */
+    max-width: 1200px; /* Matches other sections for consistent styling */
+    margin: 0 auto; /* Centers the container within the parent */
+    padding: 20px; /* Optional: Adds padding inside the container for some spacing */
+  }
+  .location-wrapper iframe {
+    width: 100%; /* Makes the iframe take up all the horizontal space of its parent */
+    height: 450px; /* Sets a fixed height for the iframe */
+    border: 0; /* Removes the border around the iframe for a cleaner look */
+  }
+  footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+  }
+  footer p,
+  a {
+    color: #c78c06;
+  }
+  /* Web Screen Appraoch  */
+  
+@media screen and (min-width: 760px) {
+  nav {
+    background-color: #222;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    color: #c78c06;
+  }
+  nav ul li {
+    list-style-type: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #c78c06;
+  }
+  .home-link,
+  .about-link,
+  .service-link,
+  .team-link,
+  .contact-link {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .logo-area:hover {
+    background-color: #c78c06;
+  }
+  .home-link:hover,
+  .about-link:hover,
+  .service-link:hover,
+  .team-link:hover,
+  .contact-link:hover {
+    background-color: #c78c06;
+    width: fit-content;
+    height: fit-content;
+  }
+  .home-link:hover a,
+  .about-link:hover a,
+  .service-link:hover a,
+  .team-link:hover a,
+  .contact-link:hover a {
+    color: #222;
+  }
+  nav ul form {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  form {
+  }
+  nav form input {
+    border: 2px solid #c78c06;
+  }
+  .fa {
+    margin-left: 0;
+  }
+  .banner img {
+    visibility: hidden;
+  }
+  .banner {
+    background-image: url(/images/main-banner.jpg);
+    background-size: cover;
+    position: relative; /* Establishes a positioning context for overlay */
+    width: 100%;
+    height: 600px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the banner */
+    overflow: hidden; /* Prevents overflow of child elements */
+  }
+  .overlay {
+    position: absolute; /* Positions relative to the nearest positioned ancestor */
+    top: 40px; /* Space from the top of the container */
+    left: 0;
+    right: 0;
+    bottom: 40px; /* Space from the bottom of the container */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px; /* Padding around content */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    width: 80%;
+    margin: auto;
+  }
+  .overlay h1,
+  .overlay p {
+    color: white; /* Ensures text is readable against dark background */
+    margin: 10px 0; /* Space between elements */
+  }
+  /* Button styling */
+  .connect-button {
+    padding: 10px 20px;
+    background-color: #c78c06; /* Yellowish-orange background */
+    color: #222;
+    text-decoration: none;
+    display: inline-flex; /* Inline-flex to align icon with text */
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+  }
+
+
+  /* About Us section styles for larger screens */
+  #about-us {
+    background-color: #ffe6ac; /* Background color */
+  }
+  #about-us .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between elements */
+    align-items: center; /* Center align items vertically */
+  }
+  #about-us .wrapper {
+    flex-basis: 50%; /* Take up 50% width of the container */
+    padding: 20px; /* Add padding for spacing */
+  }
+  #about-us .wrapper img {
+    width: 100%; /* Image width 100% of its container */
+    max-width: 100%; /* Ensure image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is displayed as block */
+  }
+
+
+  .service-top {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+  }
+  .service-top > div {
+    width: auto;
+  }
+  .right,
+  .left {
+    background-color: #ffe6ac;
+    margin: 20px;
+  }
+  .left > img {
+    width: 100%;
+  }
+  .right > img {
+    width: 100%;
+  }
+  .right > button {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .left > button {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .marketing-button {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+  }
+  .service-two {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+  .service-top h2 {
+    background-color: #fff;
+    margin-top: 0%;
+  }
+  .video,
+  .web,
+  .print {
+    background-color: #ffe6ac;
+  }
+  .web,
+  .print {
+    margin-left: 10px;
+  }
+  .video > img {
+    width: 100%;
+  }
+  .web > img {
+    width: 100%;
+  }
+  .print > img {
+    width: 100%;
+  }
+  .video > h3,
+  p {
+    margin-left: 5px;
+  }
+  .web > h3,
+  p {
+    margin-left: 5px;
+  }
+  .print > h3,
+  p {
+    margin-left: 5px;
+    margin-top: 0;
+  }
+  .video > a {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .web > a {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .print > a {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .vision-container > img {
+    width: 100%;
+    margin-top: 30px;
+    height: 400px;
+  }
+  .vision-container > div {
+    margin-top: -300px;
+    margin-left: 40px;
+    width: 90%;
+    color: #fff;
+  }
+  .vision-button {
+    background-color: #222;
+    padding: 20px;
+    color: #ccc;
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+  .vision-button > p {
+    margin-bottom: 20px;
+  }
+  #team {
+    margin-top: 100px;
+  }
+  #team h2 {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+  .john-wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* margin-bottom: 20px; */
+  }
+  .bob-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+  .contact div:nth-child(2) {
+    grid-column: 1/ 3;
+    grid-row: 2 /3;
+    margin-bottom: 0;
+  }
+  .table-wrapper > caption {
+    font-weight: 800;
+  }
+  #contact .table-wrapper {
+    width: 100%;
+    margin-top: 40px; /* Space between form and table */
+    border-collapse: collapse; /* Ensures borders between cells are shared */
+    border: 1px solid #222; /* Border around the entire table */
+  }
+  .contact table {
+    width: 100%; /* Table width matches the container */
+    border-collapse: collapse; /* Necessary for border handling */
+  }
+  .contact table caption {
+    margin-bottom: 10px; /* Space below caption */
+    text-align: left;
+  }
+  .contact table th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #222;
+    font-weight: 400;
+  }
+  .contact table td {
+    padding: 8px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left within cells */
+    border: 1px solid #222; /* Adds borders between cells */
+  }
+  .contact table th {
+    background-color: #ffe6ac; /* Yellow background for headers */
+  }
+  footer {
+    background-color: #222;
+    margin-top: 20px;
+    width: 100%;
+  }
+  footer p,
+  a {
+    color: #c78b07;
+    font-size: 15px;
+  }
+}
+
