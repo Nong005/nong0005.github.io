@@ -503,37 +503,38 @@ h1 {
   .fa {
     margin-left: 0;
   }
-  .banner img {
-    visibility:visible;
-  }
   .banner {
-    background-image: url(/images/main-banner.jpg);
-    background-size: cover;
     position: relative; /* Establishes a positioning context for overlay */
     width: 100%;
-    height: 600px;
     max-width: 1200px;
     margin: 0 auto; /* Centers the banner */
     overflow: hidden; /* Prevents overflow of child elements */
   }
+  /* Full-width background image */
+  .banner-image {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px; /* Maintains aspect ratio */
+    display: block;
+  }
+  /* Overlay with semi-transparent background */
   .overlay {
     position: absolute; /* Positions relative to the nearest positioned ancestor */
     top: 40px; /* Space from the top of the container */
-    left: 0;
-    right: 0;
+    left: 40px;
+    right: 40px;
     bottom: 40px; /* Space from the bottom of the container */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 20px; /* Padding around content */
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns items to the left */
-    width: 80%;
-    margin: auto;
   }
+  /* Styling for headings and paragraphs inside the overlay */
   .overlay h1,
   .overlay p {
     color: white; /* Ensures text is readable against dark background */
-    margin: 10px 0; /* Space between elements */
+    margin: 10px auto; /* Space between elements */
   }
   /* Button styling */
   .connect-button {
@@ -547,8 +548,9 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
     border-radius: 5px; /* Rounded corners for aesthetics */
   }
-
-
+  .connect-button i {
+    margin-left: 10px; /* Space between text and arrow icon */
+  }
   /* About Us section styles for larger screens */
   #about-us {
     background-color: #ffe6ac; /* Background color */
