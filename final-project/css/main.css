@@ -508,7 +508,7 @@ h1 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Centers the banner */
-    overflow: hidden; /* Prevents overflow of child elements */
+    background-image: url(/images/main-banner.jpg);
   }
   /* Full-width background image */
   .banner-image {
