@@ -89,7 +89,7 @@ body {
       overflow: hidden; /* Prevents overflow of child elements */
     }
     /* Full-width background image */
-    .banner-img {
+    .banner-image {
       width: 100%;
       max-width: 1200px;
       height: auto; /* Maintains aspect ratio */
