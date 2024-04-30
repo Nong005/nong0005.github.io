@@ -490,7 +490,7 @@ body {
           visibility: hidden;
         }
         .banner {
-          background-image: url(/css/soes-images/soes-background.jpg);
+          background-image: url(soes-images/soes-background.jpg);
           background-size: cover;
           position: relative; /* Establishes a positioning context for overlay */
           width: 100%;
