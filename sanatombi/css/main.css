@@ -40,7 +40,6 @@ body {
         height: 100px;
         width: 100px;
     }
-    /* hover effect  */
 
 
     .home-link:hover,
@@ -90,7 +89,7 @@ body {
       overflow: hidden; /* Prevents overflow of child elements */
     }
     /* Full-width background image */
-    .banner-image {
+    .banner-img {
       width: 100%;
       max-width: 1200px;
       height: auto; /* Maintains aspect ratio */
