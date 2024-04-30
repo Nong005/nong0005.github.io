@@ -107,7 +107,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-start; /* Aligns items to the left */
-      justify-content: centre;
+      justify-content: center;
     }
     /* Styling for headings and paragraphs inside the overlay */
     .overlay h1,
